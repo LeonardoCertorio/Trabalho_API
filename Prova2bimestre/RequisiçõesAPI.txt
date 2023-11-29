@@ -1,0 +1,146 @@
+##USUÁRIOS:
+
+POST - localhost:8080/publico/entrar
+Body:
+{
+  "usuario": "DIRETOR1",
+  "senha": "12345"
+}
+
+GET - localhost:8080/admin/usuarios/1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+##PROFESSORES:
+
+POST - localhost:8080/geral/professores
+Body:
+{
+  "nome": "Isaac Newton",
+  "email": "inewton@email.com",
+  "departamento": "física",
+  "dataNascimento": "04/01/1643",
+  "telefone": "01999999999",
+  "endereco": "Rua da maçã"
+}
+
+GET - localhost:8080/geral/professores/1
+
+PUT - localhost:8080/geral/professores/1
+Body:
+{
+  "id": 1,
+  "nome": "Isaac Newton",
+  "email": "inewton@email.com",
+  "departamento": "física",
+  "dataNascimento": "04/01/1643",
+  "telefone": "01999999999",
+  "endereco": "Rua da Maçã, 123"
+}
+
+DELETE - localhost:8080/geral/professores/1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+##DEPARTAMENTOS:
+
+POST - localhost:8080/geral/departamentos
+Body:
+{
+  "nome": "DFI",
+  "coordenador": "Isaac Newton"
+}
+
+GET - localhost:8080/geral/departamentos/1
+
+PUT - localhost:8080/geral/departamentos/1
+Body:
+{
+  "nome": "DFI - Departamento de Física",
+  "coordenador": "Isaac Newton"
+}
+
+DELETE - localhost:8080/geral/departamentos/1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+##COORDENADORES
+
+POST - localhost:8080/geral/coordenadores
+Body:
+{
+  "nome": "Isaac Newton",
+  "email": "inewton@email.com",
+  "dataNascimento": "04/01/1643",
+  "telefone": "01999999999",
+  "endereco": "Rua da Maçã, 123"
+}
+
+GET - localhost:8080/geral/coordenadores/1
+
+PUT - localhost:8080/geral/coordenadores/1
+Body:
+{
+  "id": 1,
+  "nome": "Isaac Newton",
+  "email": "isaacnewton@email.com",
+  "dataNascimento": "04/01/1643",
+  "telefone": "01999999999",
+  "endereco": "Rua da Maçã, 123"
+}
+
+DELETE - localhost:8080/geral/coordenadores/1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+##ALUNOS
+
+POST - localhost:8080/geral/alunos
+Body:
+{
+  "nome": "Leonardo Julio Certorio",
+  "email": "ljcertorio@email.com",
+  "curso": "Eng. Elétrica",
+  "dataNascimento": "07/03/2002",
+  "telefone": "44999999999",
+  "endereco": "Rua um, 2"
+}
+
+GET - localhost:8080/geral/alunos/1
+
+PUT - localhost:8080/geral/alunos/1
+Body:
+{
+  "id": 1,
+  "nome": "Leonardo Julio Certorio",
+  "email": "ljcertorio@email.com",
+  "curso": "ADS",
+  "dataNascimento": "07/03/2002",
+  "telefone": "44999999999",
+  "endereco": "Rua um, 2"
+}
+
+DELETE - localhost:8080/geral/alunos/1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CURSOS
+
+POST - localhost:8080/geral/cursos
+Body:
+{
+  "nome": "Eng. Elétrica",
+  "departamento": "DFI - Departamento De Física"
+}
+
+GET - localhost:8080/geral/cursos/1
+
+PUT - localhost:8080/geral/cursos/1
+Body:
+{
+  "id": 1,
+  "nome": "ADS",
+  "departamento": "DIN - Departamento De Informática"
+}
+
+DELETE - localhost:8080/geral/cursos/1

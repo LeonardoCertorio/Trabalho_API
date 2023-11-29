@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=senac'
+      - 'MYSQL_PASSWORD=ads'
+      - 'MYSQL_ROOT_PASSWORD=ads'
+      - 'MYSQL_USER=diretor'
+    ports:
+      - '13306:3306'
